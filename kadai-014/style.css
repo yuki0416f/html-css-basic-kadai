@@ -1,0 +1,27 @@
+@charset "UTF-8"
+body {
+    font-family: "Arial","Meiryo",sans-serif;
+}
+h1 {
+    font-size: 40px;
+    font-family: "Josefin Sans", sans-serif; 
+    font-optical-sizing: auto; 
+    font-weight: <weight>; 
+    font-style: normal;
+    letter-spacing: 2.5em;
+    text-shadow: 1px 1px 2px gray;
+    text-decoration: underline solid 3px rgb(115, 115, 114);
+}
+html {
+    font-size: 20px;
+    text-align: center;
+}
+.color-skyblue {
+    color: skyblue;
+}
+.color-pink {
+    color:  rgb(255, 192, 203) ;
+}
+#parent > p {
+    font-weight: bold;
+}
