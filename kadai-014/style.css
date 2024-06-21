@@ -5,12 +5,11 @@ body {
 h1 {
     font-size: 40px;
     font-family: "Josefin Sans", sans-serif; 
-    font-optical-sizing: auto; 
-    font-weight: <weight>; 
+    font-optical-sizing: auto;  
     font-style: normal;
     letter-spacing: 2.5em;
     text-shadow: 1px 1px 2px gray;
-    text-decoration: underline solid 3px rgb(115, 115, 114);
+    border-bottom: solid 3px rgb(115, 115, 114);
 }
 html {
     font-size: 20px;
