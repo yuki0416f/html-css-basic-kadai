@@ -1,4 +1,4 @@
-#top-child {
+#top {
     width: 800px;
     background-color: #dcc9f4;
     padding-top: 20px;
@@ -7,7 +7,7 @@
     margin-right: auto;
     text-align: center;
 }
-span {
+.top-child {
     display: inline-block;
     width: 20%;
     background-color: #ffd9df;
