@@ -1,0 +1,107 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+#menu-sp, #close, #logo-sp img {
+    width:auto;
+    height: 40px;
+
+}
+/* PC用ナビレイアウト */
+#nav-pc .nav-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 18px;
+}
+.nav-item a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+/* PC用のスタイル */
+@media screen and (min-width: 768px){ 
+    #menu-sp {
+        display: none;
+    }
+    #nav-sp {
+        display: none;
+    }
+    /* 横幅設定 */
+body {
+    max-width: 1080px;
+    min-width: 960px;
+    margin: 0 auto;
+    }
+}
+
+/* ヘッダー */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+/* スマホ用のスタイル */
+@media screen and (max-width: 767px) {
+    body {
+        min-width: 375px;
+        margin: 0;
+    }
+    /* PC用ナビ非表示 */
+        #nav-pc {
+        display: none;
+    }
+    /* ハンバーガーメニュー */
+        #menu-sp {
+            float: right;
+            padding: 0;
+        }
+    /* スマホ用ナビ */
+        #nav-sp {
+            background-color: #ce933e;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            display: none;
+            z-index: 100;
+        }
+    /* 閉じるボタン */
+        #close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    /* ナビメニュー用ロゴ */
+        #logo-sp {
+            margin: 80px 0 30px 20px;
+        }
+        #nav-sp > a {
+            display: block;
+        }
+        #nav-sp > a:link {
+            color: #ffffff;
+        }
+        #nav-sp > a:visited {
+            color: #ffffff;
+        }
+        #nav-sp > a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        #nav-sp > a:active {
+            color: #ffffff;
+        }
+        #nav-sp > .menu {
+            text-decoration: none;
+            display: block;
+            margin: 0 20px 0 20px;
+            height: 44px;
+            font-size: 16px;
+            background-image: url("images/arrow.png");
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+}

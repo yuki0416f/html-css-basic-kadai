@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ハンバーガーメニューを実装します。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>organic cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <!-- ロゴ -->
+    <a href="index.html" id="ロゴ"><img src="images/logo.png" alt="organic cafe"></a>
+    <!-- ナビ -->
+     <nav id="nav-pc">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html#concept">CONCEPT</a></li>
+            <li class="nav-item"><a href="index.html#product">PRODUCT</a></li>
+            <li class="nav-item"><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- スマホ用メニューボタン -->
+        <img id="menu-sp" src="images/button-menu.png " alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block';">
+    <!-- スマホ用ナビ -->
+     <nav id="nav-sp">
+        <img src="images/button-close.png" alt="ナビゲーションを閉じる" id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+        
+        <a href="index.html" id="logo-sp" onclick="document.getElementById('nav-sp').style.display = 'none'"></a>
+        <img src="images/logo-sp.png" alt="トップページに戻る">
+
+        <a href="index.html#concept" class="menu" onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a>
+        <a href="index.html#product" class="menu" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
+        <a href="index.html#contact" class="menu" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>
+    </nav>
+</header>
+<main>
+    <article>
+        <!-- メインビジュアル -->
+       <section id="main-visual">
+        <div id="main-message">
+        <h2>Organic Cafe</h2>
+        <P>自家焙煎コーヒーが買えるお店</P>
+        </div>
+        <img src="images/main-image.jpg" alt="メイン画像">
+       </section>
+
+    </article>
+
+</main>
+<footer>
+    
+</footer>
+</body>
+</html>
